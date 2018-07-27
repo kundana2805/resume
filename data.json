@@ -1,0 +1,25 @@
+{
+	"details":{
+		"name":"kundana",
+		"image":"images.png",
+		"phone":"9876543210",
+		"email":"kundanaballa99@gmail.com"
+	},
+	"education":[
+		{
+			"course":"B.Tech(CSE)",
+			"college":"Mic college",
+			"percentage":"81%"
+		},
+		{
+			"course":"intermediate(MPC)",
+			"college":"Sri Chaitanya jr college",
+			"percentage":"92%"
+		},
+		{
+			"course":"SSC",
+			"school":"Noble kids high school",
+			"percentage":"95%"
+		}
+	]
+}
