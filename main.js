@@ -13,7 +13,9 @@ loadjson("data.json",function(text){
 	let data=JSON.parse(text);
 	console.log(data);
 	basic(data.details);
-edu(data.education);
+	carr(data.career);
+    edu(data.education);
+    skill(data.skills);
 })
 var main=document.querySelector(".main");
 var left=document.createElement("div");
@@ -38,10 +40,14 @@ var right=document.createElement("div");
 right.classList.add("right");
 main.appendChild(right);
 function edu(education){
+    var e=document.createElement("h1");
+    e.textContent="educational Details";
+    right.appendChild(e);
+	e.appendChild(document.createElement("HR"));
 	var un=document.createElement("ul");
 	right.appendChild(un);
 	for(var i=0; i<education.length; i++){
-		var l=document.createElement("li");
+		var l=document.createElement("h4");
 		l.textContent=education[i].course;
 		un.appendChild(l);
 		var l1=document.createElement("li");
@@ -54,4 +60,32 @@ function edu(education){
 		l3.textContent=education[i].school;
 		un.appendChild(l2);
 	}
+}
+function skill(skilldata){
+	var s=document.createElement("div");
+	s.classList.add("sset");
+	right.appendChild(s);
+	var head=document.createElement("h1");
+	head.textContent="Skills Set";
+	s.appendChild(head);
+	//s.appendChild(document.createElement("HR"));
+	var t=document.createElement("table");
+	var tabledata="";
+	for (var i=0; i<skilldata.length; i++){
+		tabledata+="<tr><td>"+skilldata[i].title+"</td><td>"+skilldata[i].output+"</td></tr>";
+		t.innerHTML=tabledata;
+	}
+	head.appendChild(t);
+}
+function carr(career){
+	var d=document.createElement("div");
+	d.classList.add("career");
+	right.appendChild(d);
+	var e=document.createElement("h1");
+	e.textContent="career Objectives";
+	d.appendChild(e);
+	e.appendChild(document.createElement("HR"));
+	var para=document.createElement("p");
+	para.textContent=career.text;
+	e.appendChild(para);
 }

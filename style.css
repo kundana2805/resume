@@ -6,14 +6,15 @@
 	text-align: center;
 }
 .left{
-	width:68%;
-	border: 3px solid blue;
+	width:30%;
+	border: 2px solid blue;
 	box-shadow: 3px 3px 3px red;
 	margin: 1%;
 	padding: 1%;
+	text-align: center;
 }
 .right{
-	width: 28%;
+	width: 65%;
 	border: 3px solid blue;
 	box-shadow: 3px 3px 3px red;
 	margin: 1%;
@@ -21,21 +22,71 @@
 }
 img{
 	width: 300px;
+	border-style: double;
+	border-radius: 10px solid green;
 }
 h1,
 h2,
 h3,{
 	font size: 33px;
 }
-@media only screen and (min-width: 320px) and  (max-width: 480px){
+@media only screen and (max-width: 480px){
 	.main{
+		
+		width:100%;
+	    background-color: violet;
 		display: flex;
+		justify-content:center;
+		text-align: center;
 		flex-direction: column;
 	}
 	.left{
 		width: 100%
+		border: 2px solid blue;
+		box-shadow: 3px 3px 3px red;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
 	}
 	.right{
 		width: 100%
+		border: 3px solid blue;
+		box-shadow: 3px 3px 3px red;
+		margin: 1%;
+		padding: 1%;
 	}
 }
+@media only screen and (min-width: 320px) and  (max-width: 480px){
+	.main{
+		
+		width:100%;
+	    background-color: pink;
+		display: flex;
+		justify-content:center;
+		text-align: center;
+		flex-direction: column;
+	}
+	.left{
+		width: 100%
+		border: 2px solid red;
+		box-shadow: 3px 3px 3px red;
+		margin: 1%;
+		padding: 1%;
+		text-align: center;
+	}
+	.right{
+		width: 100%
+		border: 3px solid green;
+		box-shadow: 3px 3px 3px red;
+		margin: 1%;
+		padding: 1%;
+	}
+}
+	table,tr,td{
+		border:2px solid pink;
+		border-collapse: collapse;
+	}
+	table{
+		margin-left: 75px;
+	}
+

@@ -18,8 +18,25 @@
 		},
 		{
 			"course":"SSC",
-			"school":"Noble kids high school",
+			"college":"Noble kids high school",
 			"percentage":"95%"
 		}
-	]
+	],
+	"skills":[
+		{
+			"title":"programming Languages",
+			"output":[
+				"C","C++","Java","Python"
+			]
+		},
+		{
+			"title":"Operating systems",
+			"output":[
+			   "Windows","Linux","MAC"
+			]
+		}
+	],
+	"career":{
+		"text":"to associate with organisation and utilize by technical skills"
+	}
 }
